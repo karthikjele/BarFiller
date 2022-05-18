@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Filler</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Barfiller</h1>
+
+	<p>A simple jQuery plugin that gives you percentage-based animated bar filling...</p>
+
+	<div id="bar1" class="barfiller">
+	    <div class="tipWrap">
+		<span class="tip"></span>
+	    </div>
+	    <span class="fill" data-percentage="50"></span>
+	</div>
+	
+	<div id="bar2" class="barfiller">
+	    <div class="tipWrap">
+		<span class="tip"></span>
+	    </div>
+	    <span class="fill" data-percentage="35"></span>
+	</div>	
+	
+	<p>You can set different colors...</p>
+	
+	<div id="bar3" class="barfiller">
+	    <div class="tipWrap">
+		<span class="tip"></span>
+	    </div>
+	    <span class="fill" data-percentage="75"></span>
+	</div>	
+
+	<p>And you can set different durations....</p>
+	
+	<div id="bar4" class="barfiller">
+	    <div class="tipWrap">
+		<span class="tip"></span>
+	    </div>
+	    <span class="fill" data-percentage="95"></span>
+	</div>	
+	
+	<p>Reanimates on browser/device resize too!</p>
+	
+</div>
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+<script src="./jquery.barfiller.js" ></script>
+<script>
+    $(document).ready(function(){
+
+$('#bar1').barfiller();
+$('#bar2').barfiller();
+$('#bar3').barfiller({ barColor: '#fc6' });
+$('#bar4').barfiller({ barColor: '#900', duration: 3000 });
+
+});
+
+</script>
+
+</html>
